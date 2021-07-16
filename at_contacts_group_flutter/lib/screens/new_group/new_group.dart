@@ -154,7 +154,7 @@ class _NewGroupState extends State<NewGroup> {
                                     Image.memory(selectedImageByteData!).image,
                               ),
                             )
-                          : Icon(Icons.add, color: AllColors().ORANGE),
+                          : Icon(Icons.add, color: AllColors().LIGHT_RED),
                     ),
                   ),
                 ),

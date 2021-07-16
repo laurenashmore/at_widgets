@@ -39,7 +39,7 @@ Marker buildMarker(HybridModel user,
                     child: Icon(
                       Icons.circle,
                       size: 40,
-                      color: AllColors().DARK_BLUE,
+                      color: AllColors().LIGHT_RED,
                     ),
                   ),
                 ],
@@ -58,14 +58,14 @@ Marker buildMarker(HybridModel user,
                     top: 10,
                     child: CircleAvatar(
                       radius: 15,
-                      backgroundColor: AllColors().ORANGE,
+                      backgroundColor: AllColors().LIGHT_RED,
                       child: user.image != null
                           ? CustomCircleAvatar(
                               byteImage: user.image, nonAsset: true, size: 30)
                           : ContactInitial(
                               initials: user.displayName,
                               size: 30,
-                              backgroundColor: AllColors().ORANGE,
+                              backgroundColor: AllColors().LIGHT_RED,
                             ),
                     ),
                   ),

@@ -29,7 +29,7 @@ class Tasks extends StatelessWidget {
               child: Icon(
                 icon,
                 size: 20.toWidth,
-                color: AllColors().ORANGE,
+                color: AllColors().LIGHT_RED,
               ),
             ),
             Flexible(

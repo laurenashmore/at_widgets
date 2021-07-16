@@ -100,8 +100,8 @@ Widget eventsCollapsedContent(EventNotificationModel eventListenerKeyword) {
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
                                 Text('Edit',
-                                    style: CustomTextStyles().orange16),
-                                Icon(Icons.edit, color: AllColors().ORANGE)
+                                    style: CustomTextStyles().LIGHT_RED16),
+                                Icon(Icons.edit, color: AllColors().LIGHT_RED)
                               ],
                             ),
                           )
@@ -216,7 +216,7 @@ Widget eventsCollapsedContent(EventNotificationModel eventListenerKeyword) {
                 422),
             child: Text(
               'See Participants',
-              style: CustomTextStyles().orange14,
+              style: CustomTextStyles().LIGHT_RED14,
             ),
           ),
           Divider(),
@@ -336,7 +336,7 @@ Widget eventsCollapsedContent(EventNotificationModel eventListenerKeyword) {
                     },
                     child: Text(
                       isExited! ? 'Exited' : 'Exit Event',
-                      style: CustomTextStyles().orange16,
+                      style: CustomTextStyles().LIGHT_RED16,
                     ),
                   ),
                 ),
@@ -377,7 +377,7 @@ Widget eventsCollapsedContent(EventNotificationModel eventListenerKeyword) {
                       eventListenerKeyword.isCancelled!
                           ? 'Event Cancelled'
                           : 'Cancel Event',
-                      style: CustomTextStyles().orange16,
+                      style: CustomTextStyles().LIGHT_RED16,
                     ),
                   ),
                 )

@@ -102,7 +102,7 @@ class _SelectLocationState extends State<SelectLocation> {
                   InkWell(
                       onTap: () => Navigator.pop(context),
                       child:
-                          Text('Cancel', style: CustomTextStyles().orange16)),
+                          Text('Cancel', style: CustomTextStyles().LIGHT_RED16)),
                 ],
               ),
             ],

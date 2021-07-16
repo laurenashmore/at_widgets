@@ -74,7 +74,7 @@ class _SelectedLocationState extends State<SelectedLocation> {
                                   children: [
                                     Icon(
                                       Icons.location_on,
-                                      color: AllColors().ORANGE,
+                                      color: AllColors().LIGHT_RED,
                                     ),
                                     Text('', style: CustomTextStyles().black16)
                                   ],
@@ -83,7 +83,7 @@ class _SelectedLocationState extends State<SelectedLocation> {
                               InkWell(
                                   onTap: () => Navigator.pop(context),
                                   child: Text('Cancel',
-                                      style: CustomTextStyles().orange16))
+                                      style: CustomTextStyles().LIGHT_RED16))
                             ],
                           ),
                           SizedBox(height: 10.toHeight),

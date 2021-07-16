@@ -149,7 +149,7 @@ class _CollapsedContentState extends State<CollapsedContent> {
                       width: 40,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20.0),
-                        color: AllColors().ORANGE,
+                        color: AllColors().LIGHT_RED,
                       ),
                       child: Icon(
                         Icons.send_outlined,
@@ -273,7 +273,7 @@ class _CollapsedContentState extends State<CollapsedContent> {
                                     onTap: () async => await removePerson(),
                                     child: Text(
                                       'Remove Person',
-                                      style: CustomTextStyles().orange16,
+                                      style: CustomTextStyles().LIGHT_RED16,
                                     ),
                                   ),
                                 )
@@ -323,7 +323,7 @@ class _CollapsedContentState extends State<CollapsedContent> {
         onTap: onTap,
         child: Text(
           'See Participants',
-          style: CustomTextStyles().orange14,
+          style: CustomTextStyles().LIGHT_RED14,
         ),
       ),
     );

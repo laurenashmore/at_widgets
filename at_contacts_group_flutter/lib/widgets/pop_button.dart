@@ -11,7 +11,7 @@ class PopButton extends StatelessWidget {
       padding: const EdgeInsets.only(top: 8.0),
       child: InkWell(
           onTap: () => Navigator.pop(context),
-          child: Text(label, style: textStyle ?? CustomTextStyles().orange16)),
+          child: Text(label, style: textStyle ?? CustomTextStyles().LIGHT_RED16)),
     );
   }
 }

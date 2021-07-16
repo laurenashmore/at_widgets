@@ -112,7 +112,7 @@ class _ParticipantsState extends State<Participants> {
                                     untrackedAtsigns[index], _event!)
                                 ? 'Action Required'
                                 : 'Location not received')),
-                    style: CustomTextStyles().orange14,
+                    style: CustomTextStyles().LIGHT_RED14,
                   ),
                 );
               },

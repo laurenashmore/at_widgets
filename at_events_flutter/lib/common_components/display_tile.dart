@@ -125,7 +125,7 @@ class _DisplayTileState extends State<DisplayTile> {
                           style: (widget.semiTitle == 'Action required' ||
                                       widget.semiTitle == 'Request declined') ||
                                   (widget.semiTitle == 'Cancelled')
-                              ? CustomTextStyles().orange12
+                              ? CustomTextStyles().LIGHT_RED12
                               : CustomTextStyles().darkGrey12,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
@@ -159,7 +159,7 @@ class _DisplayTileState extends State<DisplayTile> {
                   child: Text(
                     'Retry',
                     style: TextStyle(
-                        color: AllColors().ORANGE, fontSize: 14.toFont),
+                        color: AllColors().LIGHT_RED, fontSize: 14.toFont),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),

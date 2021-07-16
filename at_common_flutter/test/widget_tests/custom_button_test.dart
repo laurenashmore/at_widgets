@@ -35,18 +35,18 @@ void main() {
         (WidgetTester tester) async {
       await tester.pumpWidget(_homeWidget(
           home: CustomButton(
-        buttonColor: Colors.orange,
+        buttonColor: Colors.LIGHT_RED,
         fontColor: Colors.white,
       )));
       final customButton =
           tester.widget<CustomButton>(find.byType(CustomButton));
-      expect(customButton.buttonColor, Colors.orange);
+      expect(customButton.buttonColor, Colors.LIGHT_RED);
       expect(customButton.fontColor, Colors.white);
 
       final container = tester.widget<Container>(find.byType(Container));
       final color = (container.decoration as BoxDecoration).color;
 
-      expect(color, Colors.orange);
+      expect(color, Colors.LIGHT_RED);
       expect(
           find.byWidgetPredicate((Widget widget) =>
               widget is Text && widget.style!.color == Colors.white),
@@ -66,17 +66,17 @@ void main() {
         (WidgetTester tester) async {
       await tester.pumpWidget(_homeWidget(
           home: CustomButton(
-        buttonColor: Colors.orange,
+        buttonColor: Colors.LIGHT_RED,
       )));
       final customButton =
           tester.widget<CustomButton>(find.byType(CustomButton));
-      expect(customButton.buttonColor, Colors.orange);
+      expect(customButton.buttonColor, Colors.LIGHT_RED);
       expect(customButton.fontColor, ColorConstants.fontPrimary);
 
       final container = tester.widget<Container>(find.byType(Container));
       final color = (container.decoration as BoxDecoration).color;
 
-      expect(color, Colors.orange);
+      expect(color, Colors.LIGHT_RED);
       expect(
           find.byWidgetPredicate((Widget widget) =>
               widget is Text && widget.style!.color == Colors.white),

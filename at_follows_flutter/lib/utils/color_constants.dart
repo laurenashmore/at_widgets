@@ -6,7 +6,7 @@ class ColorConstants {
   ///white for darktheme, black for lightTheme.
   static Color? primary;
 
-  ///orange shade [Color.fromARGB(255, 240, 94, 62)].
+  ///LIGHT_REDshade [Color.fromARGB(255, 240, 94, 62)].
   static Color? buttonHighLightColor;
 
   ///black for darkTheme, white for lightTheme.

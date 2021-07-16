@@ -1,6 +1,7 @@
 import 'package:at_location_flutter/common_components/pointed_bottom.dart';
 import 'package:at_location_flutter/map_content/flutter_map/src/layer/marker_layer.dart';
 import 'package:at_location_flutter/location_modal/hybrid_model.dart';
+import 'package:at_location_flutter/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 import 'circle_marker_painter.dart';
@@ -38,13 +39,13 @@ Widget buildMarkerCluster(List<Marker?> markers, {HybridModel? eventData}) {
                         ((markers.length - 1) == 1)
                             ? '${markers.length - 1} person nearby'
                             : '${markers.length - 1} people nearby',
-                        style: TextStyle(color: Colors.deepOrange),
+                        style: TextStyle(color: Colors.grey),
                       ),
                     ],
                   )
                 : Text(
                     '${markers.length} people nearby',
-                    style: TextStyle(color: Colors.deepOrange),
+                    style: TextStyle(color: Colors.grey),
                   ),
           )),
       Positioned(
@@ -56,7 +57,7 @@ Widget buildMarkerCluster(List<Marker?> markers, {HybridModel? eventData}) {
           height: 40,
           width: 40,
           decoration: BoxDecoration(
-            color: Colors.orange,
+            color: AllColors().LIGHT_RED,
             shape: BoxShape.circle,
           ),
           child: markers.contains(eventData?.marker)

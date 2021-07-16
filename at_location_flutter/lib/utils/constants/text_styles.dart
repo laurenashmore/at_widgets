@@ -58,18 +58,18 @@ class CustomTextStyles {
     fontSize: 10.toFont,
   );
 
-  TextStyle orange16 = TextStyle(
-    color: AllColors().ORANGE,
+  TextStyle LIGHT_RED16 = TextStyle(
+    color: AllColors().LIGHT_RED,
     fontSize: 16.toFont,
   );
 
-  TextStyle orange12 = TextStyle(
-    color: AllColors().ORANGE,
+  TextStyle LIGHT_RED12 = TextStyle(
+    color: AllColors().LIGHT_RED,
     fontSize: 12.toFont,
   );
 
-  TextStyle orange14 = TextStyle(
-    color: AllColors().ORANGE,
+  TextStyle LIGHT_RED14 = TextStyle(
+    color: AllColors().LIGHT_RED,
     fontSize: 14.toFont,
   );
 
@@ -83,8 +83,8 @@ class CustomTextStyles {
     fontSize: 10.toFont,
   );
 
-  TextStyle orange18 = TextStyle(
-    color: AllColors().ORANGE,
+  TextStyle LIGHT_RED18 = TextStyle(
+    color: AllColors().LIGHT_RED,
     fontSize: 18.toFont,
   );
 

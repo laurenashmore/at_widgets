@@ -111,7 +111,7 @@ TextButton(
 
 ##### Plugin parameters
 1. atClientserviceInstance - to perform further actions for the given @sign.
-2. appColor - applies to plugin screens to match the app's theme. This should be bright color as it takes white font over that. Defaults to orange.
+2. appColor - applies to plugin screens to match the app's theme. This should be bright color as it takes white font over that. Defaults to LIGHT_RED.
 3. followerAtsignTitle - follower @sign received from app's notification
 4. followAtsignTitle - @sign followed from webapp.
 

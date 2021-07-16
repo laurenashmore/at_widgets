@@ -90,7 +90,7 @@ class _GroupEditState extends State<GroupEdit> {
                   )
                 : Text('Done',
                     style: TextStyle(
-                        color: AllColors().ORANGE, fontSize: 15.toFont)),
+                        color: AllColors().LIGHT_RED, fontSize: 15.toFont)),
           ),
           onTrailingIconPressed: () async {
             groupName = textController!.text;
@@ -148,14 +148,14 @@ class _GroupEditState extends State<GroupEdit> {
                   children: [
                     Text(
                       'Edit group Picture',
-                      style: CustomTextStyles().orange12,
+                      style: CustomTextStyles().LIGHT_RED12,
                     ),
                     SizedBox(
                       width: 5.toWidth,
                     ),
                     Icon(
                       Icons.edit,
-                      color: AllColors().ORANGE,
+                      color: AllColors().LIGHT_RED,
                       size: 20.toFont,
                     )
                   ],

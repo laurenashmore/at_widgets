@@ -19,7 +19,7 @@ class Connections extends StatefulWidget {
   ///Perform operations like follow/following for a particular @sign.
   final atClientserviceInstance;
 
-  ///color to match with your app theme. Defaults to [orange].
+  ///color to match with your app theme. Defaults to [LIGHT_RED].
   final Color? appColor;
 
   ///name of the follower atsign received from notification to follow them back immediately.

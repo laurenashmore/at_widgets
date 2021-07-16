@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+/// 0xFFe57373
 class AllColors {
   AllColors._();
   static final AllColors _instance = AllColors._();
@@ -13,7 +13,7 @@ class AllColors {
   // ignore: non_constant_identifier_names
   Color DARK_GREY = Color(0xFF6D6D79);
   // ignore: non_constant_identifier_names
-  Color ORANGE = Color(0xFFFC7A30);
+  Color LIGHT_RED= Color(0xFFe57373);
   // ignore: non_constant_identifier_names
   Color PURPLE = Color(0xFFD9D9FF);
   // ignore: non_constant_identifier_names

@@ -17,7 +17,7 @@ class CustomHeading extends StatelessWidget {
                     : CustomTextStyles().white18)
             : SizedBox(),
         action != null
-            ? Text(action!, style: CustomTextStyles().orange18)
+            ? Text(action!, style: CustomTextStyles().LIGHT_RED18)
             : SizedBox()
       ],
     );
