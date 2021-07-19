@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:latlong2/latlong.dart';
-
 import 'common_components/floating_icon.dart';
 import 'common_components/marker_cluster.dart';
 import 'common_components/popup.dart';
@@ -57,7 +56,7 @@ Widget eventShowLocation(List<HybridModel> users, LatLng venue) {
             ),
             markers: markers,
             polygonOptions: PolygonOptions(
-                borderColor: Colors.blueAccent,
+                borderColor: Colors.redAccent,
                 color: Colors.black12,
                 borderStrokeWidth: 3),
             popupOptions: PopupOptions(

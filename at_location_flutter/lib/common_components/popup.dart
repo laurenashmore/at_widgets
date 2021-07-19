@@ -2,9 +2,7 @@ import 'package:at_location_flutter/common_components/pointed_bottom.dart';
 import 'package:at_location_flutter/location_modal/hybrid_model.dart';
 import 'package:at_location_flutter/service/location_service.dart';
 import 'package:flutter/material.dart';
-// ignore: import_of_legacy_library_into_null_safe
 import 'package:latlong2/latlong.dart';
-
 import 'contacts_initial.dart';
 import 'custom_circle_avatar.dart';
 
@@ -20,6 +18,9 @@ Widget buildPopup(HybridModel user, {LatLng? center}) {
     alignment: Alignment.center,
     children: [
       Positioned(bottom: 0, child: pointedBottom()),
+      Container(
+        child: Text('Hello!'),
+      ),
       Container(
         width: ((LocationService().calculateETA ?? true) && (showEtaSection))
             ? 200

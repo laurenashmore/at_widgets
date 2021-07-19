@@ -33,6 +33,11 @@ dependencies:
   at_contact: ^2.0.0
   at_common_flutter: ^2.0.0
   pedantic: ^1.11.0
+  #atfind:
+  #  git:
+  #    url: https://github.com/laurenashmore/At-Find
+
+
 
 
 dev_dependencies:

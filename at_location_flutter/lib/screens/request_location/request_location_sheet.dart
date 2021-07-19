@@ -8,6 +8,8 @@ import 'package:at_location_flutter/utils/constants/colors.dart';
 import 'package:at_location_flutter/utils/constants/text_styles.dart';
 import 'package:at_lookup/at_lookup.dart';
 import 'package:flutter/material.dart';
+import 'package:atfind/screens/Contacts.dart';
+
 
 
 class RequestLocationSheet extends StatefulWidget {
@@ -61,9 +63,13 @@ class _RequestLocationSheetState extends State<RequestLocationSheet> {
               textField = str;
             },
             icon: Icons.contacts_rounded,
-            onTap: widget.onTap,
+            onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => GroupList())),
           ),
           Expanded(child: SizedBox()),
+          ElevatedButton(onPressed: () { Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => GroupList()));}, child: Text('hi'),
+          ),
           Center(
             child: isLoading
                 ? CircularProgressIndicator()
