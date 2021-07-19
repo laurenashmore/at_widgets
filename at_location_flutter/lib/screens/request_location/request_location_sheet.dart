@@ -67,8 +67,17 @@ class _RequestLocationSheetState extends State<RequestLocationSheet> {
                 MaterialPageRoute(builder: (context) => GroupList())),
           ),
           Expanded(child: SizedBox()),
-          ElevatedButton(onPressed: () { Navigator.of(context).push(
-              MaterialPageRoute(builder: (context) => GroupList()));}, child: Text('hi'),
+          Center(
+            child: isLoading
+                ? CircularProgressIndicator()
+                : CustomButton(
+              buttonText: 'Contacts',
+              onPressed: () { Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => GroupList()));},
+              fontColor: AllColors().WHITE,
+              width: 164,
+              height: 48,
+            ),
           ),
           Center(
             child: isLoading
