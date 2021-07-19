@@ -8,7 +8,6 @@ import 'package:at_location_flutter/utils/constants/colors.dart';
 import 'package:at_location_flutter/utils/constants/text_styles.dart';
 import 'package:at_lookup/at_lookup.dart';
 import 'package:flutter/material.dart';
-import 'package:atfind/screens/Contacts.dart';
 
 
 
@@ -63,22 +62,8 @@ class _RequestLocationSheetState extends State<RequestLocationSheet> {
               textField = str;
             },
             icon: Icons.contacts_rounded,
-            onTap: () => Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => GroupList())),
           ),
           Expanded(child: SizedBox()),
-          Center(
-            child: isLoading
-                ? CircularProgressIndicator()
-                : CustomButton(
-              buttonText: 'Contacts',
-              onPressed: () { Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => GroupList()));},
-              fontColor: AllColors().WHITE,
-              width: 164,
-              height: 48,
-            ),
-          ),
           Center(
             child: isLoading
                 ? CircularProgressIndicator()

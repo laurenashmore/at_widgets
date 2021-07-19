@@ -26,7 +26,6 @@ import '../services/contact_service.dart';
 
 class ContactsScreen extends StatefulWidget {
   final BuildContext? context;
-
   final ValueChanged<List<AtContact?>>? selectedList;
   final bool asSelectionScreen;
   final bool asSingleSelectionScreen;
@@ -52,22 +51,13 @@ class _ContactsScreenState extends State<ContactsScreen> {
   bool blockingContact = false;
   bool errorOcurred = false;
   List<AtContact?> selectedList = [];
+
   @override
   void initState() {
     _contactService = ContactService();
     WidgetsBinding.instance!.addPostFrameCallback((timeStamp) async {
-      // try {
-      //   _contactService.fetchContacts();
-      // } catch (e) {
-      //   print('error in Contacts_screen init : $e');
-      //   if (mounted)
-      //     setState(() {
-      //       errorOcurred = true;
-      //     });
-      // }
       var _result = await _contactService!.fetchContacts();
       print('$_result = true');
-
       if (_result == null) {
         print('_result = true');
         if (mounted) {
@@ -77,7 +67,6 @@ class _ContactsScreenState extends State<ContactsScreen> {
         }
       }
     });
-
     super.initState();
   }
 
@@ -156,6 +145,9 @@ class _ContactsScreenState extends State<ContactsScreen> {
                   SizedBox(
                     height: 15.toHeight,
                   ),
+                  ///
+                  ///
+                  /// List of contacts: (?)
                   (widget.asSelectionScreen)
                       ? (widget.asSingleSelectionScreen)
                           ? Container()
@@ -185,13 +177,11 @@ class _ContactsScreenState extends State<ContactsScreen> {
                               _filteredList.add(c);
                             }
                           });
-
                           if (_filteredList.isEmpty) {
                             return Center(
                               child: Text(TextStrings().noContactsFound),
                             );
                           }
-
                           return ListView.builder(
                             padding: EdgeInsets.only(bottom: 80.toHeight),
                             itemCount: 27,

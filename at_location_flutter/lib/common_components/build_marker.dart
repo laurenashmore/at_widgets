@@ -1,3 +1,4 @@
+
 import 'package:at_location_flutter/map_content/flutter_map/src/layer/marker_layer.dart';
 import 'package:at_location_flutter/location_modal/hybrid_model.dart';
 import 'package:at_location_flutter/utils/constants/colors.dart';
@@ -6,6 +7,7 @@ import 'circle_marker_painter.dart';
 import 'contacts_initial.dart';
 import 'custom_circle_avatar.dart';
 import 'marker_custom_painter.dart';
+
 
 Marker buildMarker(HybridModel user,
     {bool singleMarker = false, Widget? marker}) {
@@ -41,12 +43,32 @@ Marker buildMarker(HybridModel user,
               color: AllColors().LIGHT_RED,
             ),
           ),
-          Positioned(
+          Positioned( /// Press on button to get activity status:
             top: 8,
             child: TextButton(
               onPressed: () {
-                ///print('My Activity Status: $_status');
-                print('TEST TEST TEST TEST :)');
+                showDialog(
+                  context: ctx,
+                  builder: (BuildContext ctx) {
+                    return AlertDialog(
+                      content: Stack(
+                        children: [
+                          Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(1.0),
+                                  child: Text(
+                                    'Your activity status: '
+                                  ),
+                                )
+                              ],
+                            ),
+                        ],
+                      ),
+                    );
+                  },
+                );
               },
               child: RotationTransition(
                 turns: AlwaysStoppedAnimation(90 / 360),

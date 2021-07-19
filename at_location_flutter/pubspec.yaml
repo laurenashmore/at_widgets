@@ -33,10 +33,10 @@ dependencies:
   at_contact: ^2.0.0
   at_common_flutter: ^2.0.0
   pedantic: ^1.11.0
-  #atfind:
-  #  git:
-  #    url: https://github.com/laurenashmore/At-Find
-
+  at_contacts_flutter: ^2.0.1
+  at_contacts_group_flutter: ^2.0.1
+  flutter_speed_dial: ^4.1.0
+  group_button: ^2.2.2
 
 
 
